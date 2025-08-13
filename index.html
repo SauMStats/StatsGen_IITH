@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistical Genetics Research Lab</title>
+    <meta name="description" content="Advancing genomic medicine through innovative statistical methods and computational approaches">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <h1 class="nav__title">Statistical Genetics Research Lab</h1>
+                </div>
+                <button class="nav__toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active" data-page="home">Home</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#" class="nav__link" data-page="research">Research</a>
+                        <ul class="nav__dropdown">
+                            <li><a href="#" class="nav__link" data-page="group">Group</a></li>
+                            <li><a href="#" class="nav__link" data-page="publications">Publications</a></li>
+                            <li><a href="#" class="nav__link" data-page="talks">Talks</a></li>
+                            <li><a href="#" class="nav__link" data-page="collaborations">Collaborations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-page="blog">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-page="contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Page -->
+        <section class="page active" id="home">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="container">
+                    <div class="hero__content">
+                        <h2 class="hero__title">Advancing Genomic Medicine Through Statistical Innovation</h2>
+                        <p class="hero__description">Our lab develops cutting-edge statistical methods for analyzing complex genomic data, with a focus on population genetics, GWAS, and precision medicine applications.</p>
+                        <button class="btn btn--primary hero__cta" data-page="research">Explore Our Research</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lab Overview -->
+            <section class="section">
+                <div class="container">
+                    <div class="section__grid">
+                        <div class="section__content">
+                            <h3 class="section__title">About Our Lab</h3>
+                            <p class="section__text">Our Statistical Genetics Research Lab is at the forefront of developing innovative computational and statistical approaches to understand the genetic basis of human disease. We combine rigorous statistical theory with cutting-edge computational methods to extract meaningful insights from large-scale genomic datasets.</p>
+                            <div class="stats">
+                                <div class="stat">
+                                    <div class="stat__number">25+</div>
+                                    <div class="stat__label">Publications</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat__number">$2.5M</div>
+                                    <div class="stat__label">Funding</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat__number">4</div>
+                                    <div class="stat__label">Team Members</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__sidebar">
+                            <div class="card announcements">
+                                <div class="card__body">
+                                    <h4 class="card__title">Recent Announcements</h4>
+                                    <ul class="announcements__list">
+                                        <li class="announcements__item">PhD student positions available for Fall 2025 - Apply by Feb 1st</li>
+                                        <li class="announcements__item">Lab presenting 3 papers at ASHG 2025 conference</li>
+                                        <li class="announcements__item">New collaboration with Broad Institute announced</li>
+                                        <li class="announcements__item">Dr. Smith elected to editorial board of American Journal of Human Genetics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Highlights -->
+            <section class="section highlights">
+                <div class="container">
+                    <h3 class="section__title">Recent Highlights</h3>
+                    <div class="highlights__grid">
+                        <div class="card highlight">
+                            <div class="card__body">
+                                <h4 class="highlight__title">New Method for Polygenic Risk Scores</h4>
+                                <p class="highlight__description">Published breakthrough method improving PRS accuracy by 30% in diverse populations</p>
+                                <div class="highlight__date">December 2024</div>
+                            </div>
+                        </div>
+                        <div class="card highlight">
+                            <div class="card__body">
+                                <h4 class="highlight__title">NIH Grant Awarded</h4>
+                                <p class="highlight__description">$2.5M funding for multi-ancestry GWAS research over 5 years</p>
+                                <div class="highlight__date">November 2024</div>
+                            </div>
+                        </div>
+                        <div class="card highlight">
+                            <div class="card__body">
+                                <h4 class="highlight__title">Nature Genetics Publication</h4>
+                                <p class="highlight__description">Joint analysis reveals novel loci associated with metabolic traits</p>
+                                <div class="highlight__date">October 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Research Page -->
+        <section class="page" id="research">
+            <div class="container">
+                <h2 class="page__title">Research Overview</h2>
+                <p class="page__description">Our research focuses on developing and applying statistical methods to understand the genetic architecture of complex traits and diseases. We work at the intersection of statistics, genetics, and computational biology.</p>
+                
+                <div class="research__areas">
+                    <div class="card research-area">
+                        <div class="card__body">
+                            <h4>Population Genetics</h4>
+                            <p>Developing methods to understand population structure and its impact on genetic association studies.</p>
+                        </div>
+                    </div>
+                    <div class="card research-area">
+                        <div class="card__body">
+                            <h4>Polygenic Risk Scores</h4>
+                            <p>Improving prediction accuracy across diverse populations and clinical implementation.</p>
+                        </div>
+                    </div>
+                    <div class="card research-area">
+                        <div class="card__body">
+                            <h4>Rare Variant Analysis</h4>
+                            <p>Statistical methods for detecting associations with rare and ultra-rare genetic variants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Group Page -->
+        <section class="page" id="group">
+            <div class="container">
+                <h2 class="page__title">Our Team</h2>
+                <div class="team__grid">
+                    <div class="card team-member">
+                        <div class="card__body">
+                            <h4 class="member__name">Dr. Sarah Chen</h4>
+                            <div class="member__role">Principal Investigator</div>
+                            <p class="member__bio">Professor of Biostatistics with expertise in statistical genetics and genomic medicine</p>
+                            <div class="member__education">PhD Statistics, Stanford University</div>
+                        </div>
+                    </div>
+                    <div class="card team-member">
+                        <div class="card__body">
+                            <h4 class="member__name">Dr. Michael Rodriguez</h4>
+                            <div class="member__role">Senior Research Scientist</div>
+                            <p class="member__bio">Focuses on population genetics and ancestry inference methods</p>
+                            <div class="member__education">PhD Human Genetics, Harvard University</div>
+                        </div>
+                    </div>
+                    <div class="card team-member">
+                        <div class="card__body">
+                            <h4 class="member__name">Emily Johnson</h4>
+                            <div class="member__role">PhD Student</div>
+                            <p class="member__bio">Developing new methods for rare variant association testing</p>
+                            <div class="member__education">MS Biostatistics, University of Washington</div>
+                        </div>
+                    </div>
+                    <div class="card team-member">
+                        <div class="card__body">
+                            <h4 class="member__name">David Park</h4>
+                            <div class="member__role">Postdoctoral Fellow</div>
+                            <p class="member__bio">Working on polygenic risk score methodology and applications</p>
+                            <div class="member__education">PhD Statistics, UC Berkeley</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Page -->
+        <section class="page" id="publications">
+            <div class="container">
+                <h2 class="page__title">Publications</h2>
+                <div class="publications__list">
+                    <div class="card publication">
+                        <div class="card__body">
+                            <h4 class="publication__title">Improved polygenic risk prediction via joint modeling of quantitative and qualitative phenotypes</h4>
+                            <div class="publication__authors">Chen S, Rodriguez M, Park D, Johnson E</div>
+                            <div class="publication__journal">Nature Genetics, 2024</div>
+                        </div>
+                    </div>
+                    <div class="card publication">
+                        <div class="card__body">
+                            <h4 class="publication__title">Population-specific GWAS identifies novel loci for metabolic syndrome in East Asian populations</h4>
+                            <div class="publication__authors">Rodriguez M, Chen S, Park D</div>
+                            <div class="publication__journal">American Journal of Human Genetics, 2024</div>
+                        </div>
+                    </div>
+                    <div class="card publication">
+                        <div class="card__body">
+                            <h4 class="publication__title">A unified framework for rare variant association testing in admixed populations</h4>
+                            <div class="publication__authors">Johnson E, Chen S, Rodriguez M</div>
+                            <div class="publication__journal">PLoS Genetics, 2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Talks Page -->
+        <section class="page" id="talks">
+            <div class="container">
+                <h2 class="page__title">Recent Talks</h2>
+                <div class="talks__list">
+                    <div class="card talk">
+                        <div class="card__body">
+                            <h4 class="talk__title">Statistical challenges in multi-ancestry genomics</h4>
+                            <div class="talk__event">American Society of Human Genetics Annual Meeting</div>
+                            <div class="talk__meta">
+                                <span class="talk__date">November 2024</span>
+                                <span class="talk__presenter">Dr. Sarah Chen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card talk">
+                        <div class="card__body">
+                            <h4 class="talk__title">Polygenic risk scores: From theory to clinical application</h4>
+                            <div class="talk__event">International Genetic Epidemiology Society Meeting</div>
+                            <div class="talk__meta">
+                                <span class="talk__date">October 2024</span>
+                                <span class="talk__presenter">David Park</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card talk">
+                        <div class="card__body">
+                            <h4 class="talk__title">Population structure and genetic association studies</h4>
+                            <div class="talk__event">Biology of Genomes, Cold Spring Harbor</div>
+                            <div class="talk__meta">
+                                <span class="talk__date">May 2024</span>
+                                <span class="talk__presenter">Dr. Michael Rodriguez</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collaborations Page -->
+        <section class="page" id="collaborations">
+            <div class="container">
+                <h2 class="page__title">Collaborations</h2>
+                <div class="collaborations__grid">
+                    <div class="card collaboration">
+                        <div class="card__body">
+                            <h4 class="collaboration__name">Broad Institute</h4>
+                            <p class="collaboration__description">Joint development of statistical methods for large-scale genomic studies</p>
+                            <div class="collaboration__pi">PI: Dr. Mark Daly</div>
+                        </div>
+                    </div>
+                    <div class="card collaboration">
+                        <div class="card__body">
+                            <h4 class="collaboration__name">All of Us Research Program</h4>
+                            <p class="collaboration__description">Population genetics analysis of diverse cohorts</p>
+                            <div class="collaboration__pi">PI: NIH Consortium</div>
+                        </div>
+                    </div>
+                    <div class="card collaboration">
+                        <div class="card__body">
+                            <h4 class="collaboration__name">UK Biobank</h4>
+                            <p class="collaboration__description">Large-scale GWAS and polygenic risk score development</p>
+                            <div class="collaboration__pi">PI: Prof. John Smith</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Page -->
+        <section class="page" id="blog">
+            <div class="container">
+                <h2 class="page__title">Lab Blog</h2>
+                <div class="blog__header">
+                    <input type="text" class="form-control blog__search" placeholder="Search blog posts...">
+                </div>
+                <div class="blog__posts">
+                    <article class="card blog-post" data-post="hardy-weinberg">
+                        <div class="card__body">
+                            <h4 class="blog-post__title">Understanding Hardy-Weinberg Equilibrium in Population Genetics</h4>
+                            <div class="blog-post__meta">
+                                <span class="blog-post__author">Dr. Sarah Chen</span>
+                                <span class="blog-post__date">December 1, 2024</span>
+                            </div>
+                            <p class="blog-post__excerpt">A deep dive into the mathematical foundations of population genetics</p>
+                            <button class="btn btn--outline blog-post__read-more">Read More</button>
+                        </div>
+                    </article>
+                    <article class="card blog-post" data-post="polygenic-math">
+                        <div class="card__body">
+                            <h4 class="blog-post__title">The Mathematics Behind Polygenic Risk Scores</h4>
+                            <div class="blog-post__meta">
+                                <span class="blog-post__author">David Park</span>
+                                <span class="blog-post__date">November 15, 2024</span>
+                            </div>
+                            <p class="blog-post__excerpt">Exploring the statistical methods used in PRS calculation</p>
+                            <button class="btn btn--outline blog-post__read-more">Read More</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Post Detail -->
+        <section class="page" id="blog-post">
+            <div class="container">
+                <article class="blog-post-detail">
+                    <header class="blog-post-detail__header">
+                        <button class="btn btn--outline blog-post__back">← Back to Blog</button>
+                        <h2 class="blog-post-detail__title">Understanding Hardy-Weinberg Equilibrium in Population Genetics</h2>
+                        <div class="blog-post-detail__meta">
+                            <span class="blog-post__author">Dr. Sarah Chen</span>
+                            <span class="blog-post__date">December 1, 2024</span>
+                        </div>
+                    </header>
+                    <div class="blog-post-detail__content">
+                        <p>The Hardy-Weinberg equilibrium is a fundamental principle in population genetics that describes the relationship between allele and genotype frequencies in an idealized population.</p>
+                        
+                        <h3>Mathematical Foundation</h3>
+                        <p>For a gene with two alleles A and a, with frequencies p and q respectively, where p + q = 1, the Hardy-Weinberg principle states that genotype frequencies will be:</p>
+                        
+                        <div class="math-equation">
+                            $$P(AA) = p^2$$
+                            $$P(Aa) = 2pq$$
+                            $$P(aa) = q^2$$
+                        </div>
+                        
+                        <p>The sum of these frequencies equals 1:</p>
+                        <div class="math-equation">
+                            $$p^2 + 2pq + q^2 = (p + q)^2 = 1$$
+                        </div>
+                        
+                        <h3>Chi-square Test for HWE</h3>
+                        <p>To test whether observed genotype frequencies deviate from Hardy-Weinberg expectations, we use the chi-square test:</p>
+                        
+                        <div class="math-equation">
+                            $$\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}$$
+                        </div>
+                        
+                        <p>Where \(O_i\) represents observed frequencies and \(E_i\) represents expected frequencies under HWE.</p>
+                        
+                        <h3>Applications in Statistical Genetics</h3>
+                        <p>Hardy-Weinberg equilibrium testing is crucial in quality control for genome-wide association studies (GWAS). Significant deviations from HWE may indicate:</p>
+                        <ul>
+                            <li>Genotyping errors</li>
+                            <li>Population stratification</li>
+                            <li>Inbreeding</li>
+                            <li>Natural selection</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section class="page" id="contact">
+            <div class="container">
+                <h2 class="page__title">Contact Us</h2>
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="card">
+                            <div class="card__body">
+                                <h4>Lab Information</h4>
+                                <div class="contact__item">
+                                    <strong>Address:</strong><br>
+                                    123 Research Drive<br>
+                                    University City, State 12345
+                                </div>
+                                <div class="contact__item">
+                                    <strong>Phone:</strong> (555) 123-4567
+                                </div>
+                                <div class="contact__item">
+                                    <strong>Email:</strong> info@statgen-lab.edu
+                                </div>
+                                <div class="contact__item">
+                                    <strong>Office Hours:</strong><br>
+                                    Monday-Friday 9:00 AM - 5:00 PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__form">
+                        <form class="form" id="contact-form">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h4>Statistical Genetics Research Lab</h4>
+                    <p>Advancing genomic medicine through innovative statistical methods</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Use</a>
+                    <a href="#" class="footer__link">Accessibility</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Statistical Genetics Research Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
